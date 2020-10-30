@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html>
+ 
 <head>
 <style>
+   img.a {
+     box-sizing: border-box;
+  width: 200px;
+  height: 400px;
+  object-fit: none;
+  object-position: 5px 10%;
+  border: 5px solid red;
+}
+  div {
+  box-sizing: border-box;
+  width: 50%;
+   height: 400px;
+  object-fit: none;
+  object-position: 5px 10%;
+  border: 5px solid red;
+  float: left;
+}
 body { 
   background-image: url('bbsbackground222.jpg');
   background-repeat: no-repeat;
@@ -14,7 +32,9 @@ body {
     background-attachment: fixed;
     background-position: center top;
   }
-      
+  <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="jugrampor.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+  </div> 
+  <div id="img.a" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="jugrampor.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31"></div>    
 </style>
   
 </head>
